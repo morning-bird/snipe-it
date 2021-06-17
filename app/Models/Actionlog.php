@@ -17,6 +17,7 @@ class Actionlog extends SnipeModel
     protected $presenter = "App\Presenters\ActionlogPresenter";
     use SoftDeletes;
     use Presentable;
+    use CompanyableTrait;
     protected $dates = [ 'deleted_at' ];
 
     protected $table      = 'action_logs';
